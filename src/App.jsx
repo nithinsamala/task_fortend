@@ -1,18 +1,18 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Components/Home";
-import Tasks from "./Components/Tasks";
-import AddTask from "./Components/AddTask";
-import Navbar from "./Components/Navbar";
+import Home from "./components/Home";
+import Tasks from "./components/Tasks";
+import AddTask from "./components/AddTask";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <BrowserRouter>
-         <Navbar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tasks" element={<Tasks />} />
         <Route path="/tasks/add" element={<AddTask />} />
-        <Route path="*" element={<Home/>} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
