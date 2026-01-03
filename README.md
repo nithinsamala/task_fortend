@@ -1,3 +1,50 @@
+
+install node.js (v18)
+step 1. Clone the Frontend Repository
+Open terminal and run:
+git clone https://github.com/nithinsamala/task_fortend.git
+
+step 2 go to project folder 
+cd task_fortend
+
+step 3:Install Dependencies
+npm install
+
+step 4. Create Environment Variable File
+Create a file in the project root:
+.env
+Add this inside .env:
+VITE_API_URL=http://localhost:5000/api/task
+
+step 5: Run the Frontend App
+npm run dev
+You will see output like:
+Local: http://localhost:5173/
+
+step 6. Open in Browser
+Open:
+http://localhost:5173
+You should see the Task Manager UI
+Frontend ↔ Backend Connection Check
+Make sure:Backend is running
+/api/tasks endpoint works
+.env API URL is correct
+Test backend directly:
+http://localhost:5000/api/tasks
+Common Errors & Fixes
+API returns 404
+Check .env value
+Ensure backend URL ends with /api/tasks
+
+
+
+
+
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
