@@ -21,8 +21,6 @@ body {
 .tasks-main {
   max-width: 100%;
 }
-
-/* Controls Section */
 .controls-section {
   background-color: white;
   border-radius: 12px;
@@ -35,8 +33,6 @@ body {
   align-items: flex-start;
   gap: 1.5rem;
 }
-
-/* Button Styles */
 .btn-add-task {
   background: linear-gradient(to right, #4f46e5, #7c3aed);
   color: white;
@@ -71,7 +67,6 @@ body {
   margin-top: 1rem;
 }
 
-/* Filter Styles */
 .filters-container {
   display: flex;
   flex-wrap: wrap;
@@ -139,7 +134,6 @@ body {
   box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
 }
 
-/* Tasks Summary */
 .tasks-summary {
   display: flex;
   flex-wrap: wrap;
@@ -181,8 +175,6 @@ body {
   color: #10b981;
   font-weight: 700;
 }
-
-/* Tasks Grid - Responsive */
 .tasks-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -360,7 +352,6 @@ body {
   background-color: #fecaca;
 }
 
-/* Loading State */
 .loading-container {
   display: flex;
   flex-direction: column;
@@ -384,8 +375,6 @@ body {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
-/* Error State */
 .error-container {
   display: flex;
   flex-direction: column;
@@ -422,8 +411,6 @@ body {
 .btn-retry:hover {
   background-color: #4338ca;
 }
-
-/* Empty State */
 .empty-state {
   display: flex;
   flex-direction: column;
@@ -451,8 +438,6 @@ body {
   margin-bottom: 1.5rem;
   max-width: 400px;
 }
-
-/* Responsive Design */
 @media (max-width: 768px) {
   .tasks-container {
     padding: 15px;
