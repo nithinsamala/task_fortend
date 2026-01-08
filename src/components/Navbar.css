@@ -1,134 +1,35 @@
-.navbar {
-  background: #16213e;
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 0 20px;
-  border-bottom: 2px solid #4f46e5;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+.nav {
+  background-color: #1f2937;
+  padding: 12px 20px;
 }
 
-.navbar-container {
+.nav-inner {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
 }
 
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.nav-brand {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
   cursor: pointer;
 }
 
-.navbar-logo {
-  background-color: #4f46e5;
-  width: 44px;
-  height: 44px;
-  border-radius: 8px;
+.nav-links {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.6rem;
-  font-weight: bold;
+  gap: 16px;
 }
 
-.navbar-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 0;
-  color: white;
-}
-
-.navbar-links {
-  display: flex;
-  gap: 0.8rem;
-  align-items: center;
-}
-
-.navbar-link {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 16px;
-  border-radius: 6px;
-  color: white;
+.nav-link {
+  color: #e5e7eb;
   text-decoration: none;
-  font-weight: 500;
-  background-color: transparent;
-}
-
-.navbar-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.navbar-link.active {
-  background-color: #4f46e5;
-}
-
-.nav-text {
   font-size: 0.95rem;
-  font-weight: 500;
 }
 
-@media (max-width: 768px) {
-  .navbar-title {
-    font-size: 1.3rem;
-  }
-
-  .navbar-logo {
-    width: 40px;
-    height: 40px;
-    font-size: 1.4rem;
-  }
-
-  .navbar-link {
-    padding: 8px 14px;
-  }
-
-  .nav-text {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .navbar {
-    padding: 0 15px;
-  }
-
-  .navbar-container {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  .navbar-links {
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .navbar-link {
-    padding: 8px 12px;
-    min-width: 80px;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar-link {
-    padding: 7px 10px;
-    min-width: 70px;
-  }
-
-  .nav-text {
-    font-size: 0.85rem;
-  }
-
-  .nav-icon {
-    font-size: 1.1rem;
-  }
+.nav-link.active {
+  color: white;
+  font-weight: 600;
 }
