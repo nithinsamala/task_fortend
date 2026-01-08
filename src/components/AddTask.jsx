@@ -130,7 +130,7 @@ function AddTask() {
           </div>
 
           <div className="form-group">
-            <label className="form-label">Due Date</label>
+            <label className="form-label"> Date</label>
             <input
               type="date"
               name="dueDate"
