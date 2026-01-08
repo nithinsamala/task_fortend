@@ -6,7 +6,6 @@
   background-color: #f4f6f8;
   padding: 20px;
 }
-
 .add-task-card {
   background-color: white;
   width: 100%;
@@ -15,12 +14,10 @@
   border-radius: 6px;
   border: 1px solid #ddd;
 }
-
 .add-task-header {
   text-align: center;
   margin-bottom: 20px;
 }
-
 .add-task-title {
   font-size: 1.6rem;
   font-weight: 600;
@@ -215,7 +212,6 @@ input[type="date"]:focus {
   .form-actions {
     flex-direction: column;
   }
-
   .btn-cancel,
   .btn-submit {
     width: 100%;
