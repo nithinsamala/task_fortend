@@ -1,64 +1,30 @@
-import React from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
-import './Navbar.css';
+import React from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import "./navbar.css";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  
- 
-  const navLinks = [
-    {
-      to: "/",
-      icon: "🏠",
-      text: "Home",
-      exact: true
-    },
-    {
-      to: "/tasks",
-      icon: "📋",
-      text: "My Tasks",
-      exact: false
-    },
-    {
-      to: "/tasks/add",
-      icon: "➕",
-      text: "Add Task",
-      exact: false
-    }
-  ];
 
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-       
-        <div 
-          className="navbar-brand"
-          onClick={() => navigate("/")}
-          style={{ cursor: 'pointer' }}
-        >
-          <div className="navbar-logo">
-            <span style={{ fontSize: '1.5rem' }}>✓</span>
-          </div>
-          <h1 className="navbar-title">TaskTracker</h1>
+    <div className="nav">
+      <div className="nav-inner">
+        <div className="nav-brand" onClick={() => navigate("/")}>
+          TaskTracker
         </div>
-        
-        <div className="navbar-links">
-          {navLinks.map((link) => (
-            <NavLink 
-              key={link.to}
-              to={link.to}
-              end={link.exact}
-              className={({ isActive }) => 
-                `navbar-link ${isActive ? 'active' : ''}`
-              }
-            >
-              <span className="nav-icon">{link.icon}</span>
-              <span className="nav-text">{link.text}</span>
-            </NavLink>
-          ))}
+
+        <div className="nav-links">
+          <NavLink to="/" end className="nav-link">
+            Home
+          </NavLink>
+          <NavLink to="/tasks" className="nav-link">
+            Tasks
+          </NavLink>
+          <NavLink to="/tasks/add" className="nav-link">
+            Add
+          </NavLink>
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 
