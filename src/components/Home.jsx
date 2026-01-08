@@ -1,24 +1,17 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import "./Home.css";
-import Navbar from './Navbar';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./home.css";
 
 const Home = () => {
   return (
-  
-    <div className="home-container">
-      
-      <h1 className="welcome-title">Welcome to TaskTracker</h1>
-      <p className="welcome-text">
-        Your personal productivity companion. Organize tasks, track progress, 
-        and achieve your goals efficiently with our intuitive task management system.
+    <div className="home">
+      <h1 className="home-title">Task Tracker</h1>
+      <p className="home-text">
+        Manage your daily tasks, track progress and stay organized.
       </p>
-
-      <div className="cta-section">
-        <Link to="/tasks" className="cta-button">
-          Get Started
-        </Link>
-      </div>
+      <Link to="/tasks" className="home-btn">
+        Get Started
+      </Link>
     </div>
   );
 };
